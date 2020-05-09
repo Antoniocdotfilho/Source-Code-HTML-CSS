@@ -1,0 +1,97 @@
+<html>
+<head>
+ <title> Formulario HTML</title>
+ <meta http-equival="content-type" content="text/html;charset=uft-8">
+</head>
+<body bgcolor= "#1f6ce2">
+  <table border="0" align="center" width="50" bgcolor="#639df7">
+   <tr> 
+    <td>
+     <fieldset> <!--Contorno ou Margem do formulario-->
+      <legend> Digite seus dados </legend> <!--Informação da margem do formulario-->
+       <form action="enviar.php" method="get" name="cadrastro">
+        <table border="0">
+         <tr>
+          <td><label> Nome: </label></td>
+          <td> <Input type="text" id="nome" name="name" size="35" maxlenght="50" placeholder="Digite seu nome"/> 
+          </input></td>
+         </tr>
+         <tr>
+          <td><label> E-mail: </label></td>
+          <td><Input type="email" id="mail" name="mail" size="50" maxlenght="30" placeholder="Digite seu email"/></td>
+         </tr>
+         <tr>
+          <td><label> Telefone: </label></td>
+          <td><Input type="text" id="tel" name="tel" size="50" maxlenght="10" placeholder="Digite seu telefone"/> </td>
+         </tr>
+         <tr>
+          <td><label> Senha: </label> </td>
+          <td><Input type="password" id="senha" name="senha" size="50" maxlenght=" 10" 
+                     placeholder=" Digite sua senha(MAX 8 CARACTERES)"/></td>
+         </tr>
+         <tr>
+          <td><label> Data de label></td>
+          <td><Input type="date" id="data_nasc" name="data_nasc" min="2002-05-05" max="2017-01-01"/></td>
+         </tr>
+         <tr>
+          <td><label>Generos Musicais: </label></td>
+          <label> Pop</label>
+          <td><Input type="checkbox" id="pop" name="pop" value="Pop"/>
+          <br/> 
+         <label> Eletronica</label>
+         <Input type="checkbox" id="eletronica" name="eletronica" value="Eletronica"/>
+          <br/> 
+         <Input type="checkbox" id="sertanejo" name="sertanejo" value="Sertanejo"/>
+         <label> Sertanejo</label>
+           <br/>
+         <Input type="checkbox" id="funk" name="funk" value="Funk"/>
+         <label> Funk</label>
+           <br/>
+         <Input type="checkbox" id="gospel" name="gospel" value="Gospel"/>
+         <label> Gospel</label>
+          </tr>
+          </td>
+         <tr>
+          <td> <label> Sexo: </label> </td>
+          <td> <Input type="radio" id="sexo" name="sexo" value="Feminino">
+           <td><label> Feminino </label></td>
+           <Input type="radio" id="sexo" name="sexo" value="Masculino">
+           <label> Masculino </label>
+           <Input type="radio" id="sexo" name="sexo" value="Outro">
+           <label> Outro </label>  
+          </tr>
+          </td>
+
+           <tr>
+           <td> <label> Estado: </label> </td>
+            <td> <select id="estado" name="estado">
+           <option value= "" selected= "selected">--Selecione--</option>
+           <optgroup label="Sudeste">
+              <option value= "MG"> Minas Gerais </option>
+              <option value= "SP"> São Paulo </option>
+              <option value= "Rj"> Rio de Janeiro</option>
+           <optgroup label="Nordeste">
+            <option value= "CE"> Ceara </option>
+            <option value= "BA"> Bahia </option>
+            <option value= "PE"> Pernambuco </option>
+            </tr>
+            </td>
+           </optgroup>
+          </select>
+           <tr> 
+           <td> <label> Asssunto: </label> </td>
+           <td><textarea cols="40"  rows="10"  id="assunto" nome="assunto"> </textarea>
+            <br/>
+            <br/>
+           <tr>
+           <th colspan= "2"><input type="submit" id="enviar" name="enviar" value="Enviar"/>
+           <colspan= "2"><input type="reset"  id="limpar"  name="limpar"  value="Limpar"/> 
+          </tr>
+</table>
+</form>
+</fieldset>
+</td>
+</tr>
+</table>
+</body>
+</html>
